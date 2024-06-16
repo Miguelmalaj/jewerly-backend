@@ -1,9 +1,9 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import mongoose, { Document } from "mongoose";
-import { Jewelry } from "./jewelry.entity";
+import { Jewelry } from "src/jewelry/entities";
 
 @Schema()
-export class Requests extends Document {
+export class Request extends Document {
 
 //nombre cliente previo, una vez de haga el pago, se crea el cliente en la tabla customers
 
@@ -24,4 +24,4 @@ jewerly: Jewelry
 
 }
 
-export const RequestsSchema = SchemaFactory.createForClass( Requests );
+export const RequestSchema = SchemaFactory.createForClass( Request );

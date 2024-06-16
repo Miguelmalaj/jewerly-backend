@@ -2,7 +2,7 @@ import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { Document } from "mongoose";
 
 @Schema()
-export class MetalTypes extends Document {
+export class ItemType extends Document {
 
     @Prop({
         unique: true,
@@ -12,4 +12,4 @@ export class MetalTypes extends Document {
 
 }
 
-export const MetalTypesSchema = SchemaFactory.createForClass( MetalTypes );
+export const ItemTypeSchema = SchemaFactory.createForClass( ItemType );

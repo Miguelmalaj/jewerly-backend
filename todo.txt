@@ -1,0 +1,30 @@
+PENDING TODO:
+ you must make the controllers, services etc.
+
+
+How the system works:
+
+TODO: make auth module.
+
+create users (one to start)
+
+the user make registers of metalTypes:
+the user make registers of ItemTypes
+
+the user make a request:
+ - the request is registered into its table(name, lastName, date).
+ - before the request is registered, 
+    first is registered a new jewerly where its ObjectId will be taken to the new request.
+
+when a jewerly register is created:
+    (
+        invoices=null, 
+        itemType[ObjectId], 
+        metalType[ObjectId],
+        user[ObjectId],
+    )
+
+
+
+Generate a MODULE:
+nest g res name --no-spec
